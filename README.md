@@ -1,70 +1,204 @@
-# Getting Started with Create React App
+# 👩‍💼 Application RH — Gestion des Employés
+## 📚 Projet Académique Full-Stack (React.js + Redux & API REST)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🧾 Présentation générale
 
-In the project directory, you can run:
+Ce projet est une **application web de gestion des ressources humaines**, réalisée dans un **cadre académique**, visant à appliquer les concepts du **développement Full-Stack**.
 
-### `npm start`
+L’application permet de gérer les **employés** et les **départements** d’une entreprise fictive appelée **InnovateTech**, en s’appuyant sur :
+- un **Frontend** développé avec **React.js et Redux**
+- un **Backend** sous forme d’**API REST** développée avec **Node.js & Express.js**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 Objectifs pédagogiques
 
-### `npm test`
+- Mettre en œuvre l’architecture **Client / Serveur**
+- Utiliser **Redux** pour la gestion globale de l’état
+- Concevoir et consommer une **API REST**
+- Implémenter les opérations **CRUD**
+- Structurer un projet Frontend et Backend
+- Déployer une API sur une plateforme cloud (**Vercel**)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🖼️ Aperçu de l’application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Liste des empkoyés 
+![GetAllEmployees](capture/GetAllEmployees.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Detail d'un employee
+![FindEmployee](capture/FindEmployee.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### LandingPage
+![LandingPage](capture/LandingPage.png)
 
-### `npm run eject`
+### Dashboard 
+![Dashboard](capture/Dashboard.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Modifier employee
+![UpdateEmployee](capture/UpdateEmployee.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Ajout d'un employee
+![AddEmployee](capture/AddEmployee.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 🎨 FRONTEND — Application RH (React.js + Redux)
 
-## Learn More
+## 📌 Rôle du Frontend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Le frontend constitue l’**interface utilisateur** de l’application.  
+Il permet à l’utilisateur RH d’interagir avec le système via une interface dynamique et ergonomique.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+La **gestion de l’état global** de l’application (employés, départements, opérations CRUD) est assurée par **Redux**.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀 Fonctionnalités Frontend
 
-### Analyzing the Bundle Size
+### 👥 Gestion des employés
+- ➕ Ajouter un employé
+- 📋 Afficher la liste des employés
+- 🔍 Consulter le détail d’un employé
+- ✏️ Modifier un employé
+- 🗑️ Supprimer un employé par matricule
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 📊 Tableau de bord RH
+- Génération automatique du **matricule**
+- Calcul automatique de l’**ancienneté**
+- Graphiques de répartition par département
+- Affichage des anniversaires d’embauche
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔄 Gestion de l’état avec Redux
 
-### Advanced Configuration
+Redux est utilisé pour :
+- Centraliser les données
+- Éviter le *prop drilling*
+- Synchroniser l’état entre les composants
+- Faciliter la maintenance et l’évolution de l’application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## ⚙️ Installation du Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npx create-react-app gestion-employees
+cd gestion-employees
+npm install react-router-dom axios redux react-redux
+npm install react-chartjs-2 chart.js
+npm start
+```
 
-### `npm run build` fails to minify
+📍 **Application accessible sur :**  
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🛠️ Technologies Frontend
+
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  
+  **[React.js](https://react.dev/)** : bibliothèque JavaScript pour la création d’interfaces utilisateur dynamiques et réactives.
+
+- ![Redux](https://img.shields.io/badge/redux-%23764ABC.svg?style=for-the-badge&logo=redux&logoColor=white)  
+  **[Redux](https://redux.js.org/)** : gestion centralisée et prévisible de l’état global de l’application.
+
+- ![React Router](https://img.shields.io/badge/react--router-%23CA4245.svg?style=for-the-badge&logo=react-router&logoColor=white)  
+  **[React Router DOM](https://reactrouter.com/)** : gestion de la navigation et du routage entre les différentes pages de l’application.
+
+- ![Axios](https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)  
+  **[Axios](https://axios-http.com/)** : bibliothèque HTTP pour communiquer avec l’API backend (GET, POST, PUT, DELETE).
+
+- ![Chart.js](https://img.shields.io/badge/chart.js-F5788D?style=for-the-badge&logo=chart.js&logoColor=white)  
+  **[Chart.js](https://www.chartjs.org/)** : création de graphiques interactifs pour la visualisation des données RH.
+
+- ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)  
+  **[Bootstrap](https://getbootstrap.com/)** : framework CSS pour une mise en page responsive et des composants UI modernes.
+
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  
+  **CSS3** : stylisation personnalisée et animations.
+
+
+---
+
+# 🔧 BACKEND — EmployeRhManagement API
+
+## 📌 Rôle du Backend
+
+Le backend assure la **gestion des données**, la **logique métier** et l’exposition des **endpoints REST** consommés par le frontend **React.js + Redux**.
+
+---
+
+## 🛠️ Technologies Backend
+
+- ![Node.js](https://img.shields.io/badge/node.js-v20-green?style=for-the-badge&logo=node.js&logoColor=white)  
+  **[Node.js](https://nodejs.org/)** : environnement d’exécution JavaScript côté serveur.
+
+- ![Express.js](https://img.shields.io/badge/express.js-000000?style=for-the-badge&logo=express&logoColor=white)  
+  **[Express.js](https://expressjs.com/)** : framework minimaliste pour la création d’API REST.
+
+- ![JSON](https://img.shields.io/badge/json-data-black?style=for-the-badge&logo=json&logoColor=white)  
+  **JSON** : stockage des données (choix pédagogique).
+
+- ![Vercel](https://img.shields.io/badge/vercel-deployment-black?style=for-the-badge&logo=vercel&logoColor=white)  
+  **[Vercel](https://vercel.com/)** : déploiement et hébergement de l’API backend.
+
+
+---
+
+## 🔍 Fonctionnalités Backend
+
+- CRUD complet pour les employés  
+- CRUD complet pour les départements  
+- Génération automatique du matricule  
+- Calcul de l’ancienneté  
+- Gestion des erreurs et validations  
+
+---
+
+## 🔗 Endpoints de l’API
+
+### 👥 Employés
+
+| Méthode | Endpoint | Description |
+|--------|---------|------------|
+| GET | `/employees` | Récupérer tous les employés |
+| GET | `/employees/:matricule` | Récupérer un employé |
+| POST | `/employees` | Ajouter un employé |
+| PUT | `/employees/:matricule` | Mettre à jour un employé |
+| DELETE | `/employees/:matricule` | Supprimer un employé |
+
+---
+
+### 🏢 Départements
+
+| Méthode | Endpoint | Description |
+|--------|---------|------------|
+| GET | `/departments` | Récupérer tous les départements |
+| GET | `/departments/:id` | Récupérer un département |
+| POST | `/departments` | Ajouter un département |
+| PUT | `/departments/:id` | Mettre à jour un département |
+| DELETE | `/departments/:id` | Supprimer un département |
+
+---
+
+## ☁️ Déploiement
+
+- Backend déployé sur **Vercel**
+- API consommée par le frontend **React.js + Redux**
+
+---
+
+## 🎓 Compétences acquises
+
+- Développement React.js avec Redux  
+- Architecture Client / Serveur  
+- Création d’API REST  
+- Gestion de l’état global  
+- Communication Frontend / Backend  
+- Déploiement cloud  
+

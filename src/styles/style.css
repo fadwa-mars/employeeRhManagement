@@ -1,0 +1,26 @@
+/* Animation fadeUp réutilisable */
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Appliquer fadeUp sur les deux sections */
+.section-hero,
+.section-team {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+/* Icône animée (section 1) */
+.icon-animated {
+  font-size: 3rem;
+  display: inline-block;
+  animation: pulseIcon 2s infinite ease-in-out;
+}
+
