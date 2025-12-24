@@ -23,7 +23,7 @@ L’application permet de gérer les **employés** et les **départements** d’
 
 ## 🖼️ Aperçu de l’application
 
-### Liste des employés 
+### Liste des employees
 ![GetAllEmployees](src/capture/GetAllEmployees.png)
 
 ### Detail d'un employee
