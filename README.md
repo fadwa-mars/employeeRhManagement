@@ -1,7 +1,6 @@
 # 👩‍💼 Application RH — Gestion des Employés
 ## 📚 Projet Académique Full-Stack (React.js + Redux & API REST)
 
----
 
 ## 🧾 Présentation générale
 
@@ -11,7 +10,6 @@ L’application permet de gérer les **employés** et les **départements** d’
 - un **Frontend** développé avec **React.js et Redux**
 - un **Backend** sous forme d’**API REST** développée avec **Node.js & Express.js**
 
----
 
 ## 🎯 Objectifs pédagogiques
 
@@ -22,7 +20,6 @@ L’application permet de gérer les **employés** et les **départements** d’
 - Structurer un projet Frontend et Backend
 - Déployer une API sur une plateforme cloud (**Vercel**)
 
----
 
 ## 🖼️ Aperçu de l’application
 
@@ -44,7 +41,6 @@ L’application permet de gérer les **employés** et les **départements** d’
 ### Ajout d'un employee
 ![AddEmployee](src/capture/AddEmployee.png)
 
----
 
 # 🎨 FRONTEND — Application RH (React.js + Redux)
 
@@ -55,7 +51,6 @@ Il permet à l’utilisateur RH d’interagir avec le système via une interface
 
 La **gestion de l’état global** de l’application (employés, départements, opérations CRUD) est assurée par **Redux**.
 
----
 
 ## 🚀 Fonctionnalités Frontend
 
@@ -72,7 +67,6 @@ La **gestion de l’état global** de l’application (employés, départements,
 - Graphiques de répartition par département
 - Affichage des anniversaires d’embauche
 
----
 
 ## 🔄 Gestion de l’état avec Redux
 
@@ -82,7 +76,6 @@ Redux est utilisé pour :
 - Synchroniser l’état entre les composants
 - Faciliter la maintenance et l’évolution de l’application
 
----
 
 ## ⚙️ Installation du Frontend
 
@@ -97,7 +90,6 @@ npm start
 📍 **Application accessible sur :**  
 http://localhost:3000
 
----
 
 ## 🛠️ Technologies Frontend
 
@@ -131,7 +123,6 @@ http://localhost:3000
 
 Le backend assure la **gestion des données**, la **logique métier** et l’exposition des **endpoints REST** consommés par le frontend **React.js + Redux**.
 
----
 
 ## 🛠️ Technologies Backend
 
@@ -148,8 +139,6 @@ Le backend assure la **gestion des données**, la **logique métier** et l’exp
   **[Vercel](https://vercel.com/)** : déploiement et hébergement de l’API backend.
 
 
----
-
 ## 🔍 Fonctionnalités Backend
 
 - CRUD complet pour les employés  
@@ -157,8 +146,6 @@ Le backend assure la **gestion des données**, la **logique métier** et l’exp
 - Génération automatique du matricule  
 - Calcul de l’ancienneté  
 - Gestion des erreurs et validations  
-
----
 
 ## 🔗 Endpoints de l’API
 
@@ -172,7 +159,6 @@ Le backend assure la **gestion des données**, la **logique métier** et l’exp
 | PUT | `/employees/:matricule` | Mettre à jour un employé |
 | DELETE | `/employees/:matricule` | Supprimer un employé |
 
----
 
 ### 🏢 Départements
 
@@ -184,14 +170,11 @@ Le backend assure la **gestion des données**, la **logique métier** et l’exp
 | PUT | `/departments/:id` | Mettre à jour un département |
 | DELETE | `/departments/:id` | Supprimer un département |
 
----
-
 ## ☁️ Déploiement
 
 - Backend déployé sur **Vercel**
 - API consommée par le frontend **React.js + Redux**
 
----
 
 ## 🎓 Compétences acquises
 
