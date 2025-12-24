@@ -1,5 +1,5 @@
 # 👩‍💼 Application RH — Gestion des Employés
-## 📚 Projet Académique Full-Stack (React.js + Redux & API REST)
+**📚 Projet Académique Full-Stack (React.js + Redux & API REST)**
 
 
 ## 🧾 Présentation générale
