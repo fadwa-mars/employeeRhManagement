@@ -26,23 +26,23 @@ L’application permet de gérer les **employés** et les **départements** d’
 
 ## 🖼️ Aperçu de l’application
 
-### Liste des empkoyés 
-![GetAllEmployees](capture/GetAllEmployees.png)
+### Liste des employés 
+![GetAllEmployees](src/capture/GetAllEmployees.png)
 
 ### Detail d'un employee
-![FindEmployee](capture/FindEmployee.png)
+![FindEmployee](src/capture/FindEmployee.png)
 
 ### LandingPage
-![LandingPage](capture/LandingPage.png)
+![LandingPage](src/capture/LandingPage.png)
 
 ### Dashboard 
-![Dashboard](capture/Dashboard.png)
+![Dashboard](src/capture/Dashboard.png)
 
 ### Modifier employee
-![UpdateEmployee](capture/UpdateEmployee.png)
+![UpdateEmployee](src/capture/UpdateEmployee.png)
 
 ### Ajout d'un employee
-![AddEmployee](capture/AddEmployee.png)
+![AddEmployee](src/capture/AddEmployee.png)
 
 ---
 
